@@ -32,10 +32,18 @@ const Product = db.define('products',{
         type:DataTypes.INTEGER,
         allowNull:false
     },
-    Price:{
+    PrecioDeVenta:{
         type:DataTypes.INTEGER,
         allowNull:false
-    }, 
+    },
+    PrecioDeAdquirido:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+    },
+    fechaDeVencimiento :{
+        type:DataTypes.DATEONLY,
+        allowNull:false
+    },
     ImgLink:{
         type:DataTypes.TEXT,
         allowNull:false

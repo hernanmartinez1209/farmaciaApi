@@ -21,6 +21,9 @@ const CreateProduct = async (productObj) =>{
         Presentacion : productObj.Presentacion,
         Lavoratorio : productObj.Lavoratorio,
         Stock  : productObj.Stock,
+        PrecioDeVenta : productObj.PrecioDeVenta,
+        PrecioDeAdquirido: productObj.PrecioDeAdquirido,
+        fechaDeVencimiento:productObj.fechaDeVencimiento,
         Price : productObj.Price,
         ImgLink : productObj.ImgLink,
     })
