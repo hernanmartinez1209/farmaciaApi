@@ -43,6 +43,8 @@ const Product = db.define('products',{
     fechaDeVencimiento :{
         type:DataTypes.DATEONLY,
         allowNull:false
+        // dd/mm/yy
+        // 12/09/1999
     },
     ImgLink:{
         type:DataTypes.TEXT,

@@ -1,5 +1,6 @@
 const express = require('express')
 const productRouter = require('./produtcs/products.route')
+const ventasRouter = require('../src/ventas/ventas.router')
 const db = require('./utils/database')
 const app = express()
 const initModels = require('./models/initmodels')
@@ -10,6 +11,7 @@ app.get('/', (req,res) =>{
 })
 app.use(express.json())
 app.use('/',productRouter)
+app.use('/',ventasRouter)
 
 db.authenticate()
   .then(()=>console.log('Database Authenticated!'))
