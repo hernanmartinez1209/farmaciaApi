@@ -23,6 +23,6 @@ db.sync()
 
 initModels()  
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("server en funcion");
 })
