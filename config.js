@@ -3,7 +3,7 @@ const config = {
     nodeEnv: process.env.NODE_ENV || "prod",
     db:{
          prod: {
-            dialect: "postgres",
+            dialect: 'postgres',
             host: process.env.DB_PROT_HOST,
             port: process.envDB_PROT_PORT,
             database: process.env.DB_PROT_NAME,
