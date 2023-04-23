@@ -22,6 +22,14 @@ const config = {
             database: process.env.DB_PROT_NAME,
             username: process.env.DN_PROT_USER,
             password: process.env.DB_PROT_PASS,
+            dialectOptions:process.env.NODE_ENV === 'production'
+            ?{
+               ssl:{
+                require:true,
+                rejectUnauthorized:false
+               }
+            }:{}
+            ,
             //Extra configs
             define: {
               timestamps: true,
