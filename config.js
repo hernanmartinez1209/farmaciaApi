@@ -1,6 +1,6 @@
 const config = {
     port:process.env.PORT||5000,
-    nodeEnv: process.env.NODE_ENV || "dev",
+    nodeEnv: process.env.NODE_ENV || "prod",
     db:{
         dev: {
             dialect: "postgres",
