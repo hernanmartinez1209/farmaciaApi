@@ -1,6 +1,7 @@
+// require('dotenv').config()
 const config = {
     port:process.env.PORT||5000,
-    nodeEnv: process.env.NODE_ENV || 'prod',
+    nodeEnv: process.env.NODE_ENV || 'dev',
     db:{
         dev: {
             dialect: "postgres",

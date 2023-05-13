@@ -4,7 +4,7 @@ const ventasRouter = require('../src/ventas/ventas.router')
 const db = require('./utils/database')
 const app = express()
 const initModels = require('./models/initmodels')
-require('dotenv').config()
+//require('dotenv').config()
 
 app.get('/', (req,res) =>{
     res.json({messaga:"serverOk"})
